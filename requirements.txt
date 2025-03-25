@@ -1,5 +1,13 @@
-```txt
-streamlit
-requests
-Pillow
-```
+# Core Python Libraries
+streamlit==1.33.0
+Pillow==10.2.0
+python-dotenv==1.0.1
+
+# OpenAI Client Library
+openai==1.14.0
+
+# Base Python Libraries
+requests==2.31.0
+base64==1.0.0
+io==1.0.0
+os==1.0.0
