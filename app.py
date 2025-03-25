@@ -1,4 +1,4 @@
-```python
+
 import streamlit as st
 import requests
 from PIL import Image
@@ -119,4 +119,3 @@ else:  # Upload Medicine Image
 # Add a footer with minimal content
 st.markdown("---")
 st.markdown("Healthcare Assistant © 2025")
-```
