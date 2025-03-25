@@ -6,8 +6,6 @@ python-dotenv==1.0.1
 # OpenAI Client Library
 openai==1.14.0
 
-# Base Python Libraries
+# Base Python Libraries (built-in, no need to specify)
+# requests library for potential HTTP requests
 requests==2.31.0
-base64==1.0.0
-io==1.0.0
-os==1.0.0
