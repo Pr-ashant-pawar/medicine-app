@@ -5,10 +5,6 @@ from PIL import Image
 import io
 import os
 import base64
-from dotenv import load_dotenv
-
-# Load environment variables
-load_dotenv()
 
 # Set page configuration with optimized settings
 st.set_page_config(
@@ -24,7 +20,12 @@ st.write("Get detailed information about medicines by entering a name or uploadi
 
 # Function to get medicine information from OpenRouter AI
 def get_medicine_info(prompt):
-    api_key = os.getenv("OPENROUTER_API_KEY")
+    # Retrieve API key from Streamlit secrets
+    api_key = st.secrets.get("OPENROUTER_API_KEY")
+    
+    if not api_key:
+        st.error("OpenRouter API key not found. Please set it in Streamlit Secrets.")
+        return "API key configuration error"
     
     headers = {
         "Authorization": f"Bearer {api_key}",
