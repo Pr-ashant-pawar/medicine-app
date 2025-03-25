@@ -1,7 +1,6 @@
 ```txt
 streamlit
-openai==1.14.0
+requests
 Pillow
 python-dotenv
-requests
 ```
