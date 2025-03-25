@@ -1,13 +1,7 @@
 ```txt
-streamlit==1.32.0
+streamlit
 openai==1.14.0
-Pillow==10.2.0
-python-dotenv==1.0.1
-base64==1.0.0
-```
-
-# Note: Some additional considerations:
-# 1. The version numbers are recent as of March 2025
-# 2. You may need to adjust versions based on compatibility
-# 3. The base64 module is typically part of Python's standard library, so it might not need a separate installation
+Pillow
+python-dotenv
+requests
 ```
